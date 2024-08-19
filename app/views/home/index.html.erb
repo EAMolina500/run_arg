@@ -1,0 +1,33 @@
+<!-- app/views/home/index.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Aplicación</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a Mi Aplicación</h1>
+    <nav>
+      <%= link_to 'Inicio', root_path %>
+      <%= link_to 'Eventos', events_path %>
+      <%= link_to 'Corredores', runners_path %>
+    </nav>
+  </header>
+
+  <main>
+    <h2>¡Hola, mundo!</h2>
+    <p>Este es el contenido de tu vista principal.</p>
+    <div id="react-component"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <%= Time.now.year %> Mi Aplicación</p>
+  </footer>
+</body>
+</html>

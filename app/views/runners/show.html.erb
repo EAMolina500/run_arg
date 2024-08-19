@@ -1,0 +1,14 @@
+<h1><%= @runner.attribute1 %></h1>
+
+<p>
+  <strong>ID:</strong>
+  <%= @runner.id %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @runner.attribute2 %>
+</p>
+
+<%= link_to 'Edit', edit_runner_path(@runner) %> |
+<%= link_to 'Back', runners_path %>
